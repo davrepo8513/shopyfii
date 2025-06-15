@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Filter, Grid, List, ChevronDown, X } from 'lucide-react';
+import { Filter, Grid, List, X } from 'lucide-react';
 import { 
   fetchProducts, 
   setSearchQuery, 
@@ -88,14 +88,6 @@ const Products = () => {
 
   const handleClearFilters = () => {
     dispatch(clearFilters());
-  };
-
-  const formatPrice = (price) => {
-    return new Intl.NumberFormat('en-IN', {
-      style: 'currency',
-      currency: 'INR',
-      maximumFractionDigits: 0
-    }).format(price);
   };
 
   return (

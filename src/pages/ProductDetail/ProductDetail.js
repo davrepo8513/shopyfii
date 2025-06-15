@@ -10,7 +10,6 @@ import {
   Truck, 
   RotateCcw, 
   Shield,
-  Check,
   Plus,
   Minus
 } from 'lucide-react';

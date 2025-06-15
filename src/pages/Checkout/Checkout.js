@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { 
@@ -8,7 +8,6 @@ import {
   Truck, 
   Shield,
   Edit,
-  Plus
 } from 'lucide-react';
 import { setShippingAddress, setBillingAddress } from '../../store/slices/orderSlice';
 import './Checkout.css';
@@ -17,7 +16,6 @@ const Checkout = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { items, totalAmount } = useSelector(state => state.cart);
-  const { shippingAddress, billingAddress } = useSelector(state => state.order);
   
   const [currentStep, setCurrentStep] = useState(1);
   const [sameAsShipping, setSameAsShipping] = useState(true);

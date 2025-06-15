@@ -14,6 +14,8 @@ const ProductCard = ({ product }) => {
   const { items: wishlistItems } = useSelector(state => state.wishlist);
   const { items: cartItems } = useSelector(state => state.cart);
   const isInWishlist = wishlistItems.some(item => item.id === product.id);
+
+  console.log('ProductCard', setSelectedSize);
   
   // Find if this product is in cart and get its quantity
   const cartItem = cartItems.find(item => 

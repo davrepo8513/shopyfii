@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Star, TrendingUp, Shield, Truck, RotateCcw } from 'lucide-react';
+import { ArrowRight, Star, Shield, Truck, RotateCcw } from 'lucide-react';
 import { fetchProducts, fetchFeaturedProducts } from '../../store/slices/productsSlice';
 import ProductCard from '../../components/ProductCard/ProductCard';
 import './Home.css';
